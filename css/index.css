@@ -16,6 +16,7 @@ html, body {
     text-transform: uppercase;
     font-size: 80%;
     margin-right: 40px;
+    box-sizing: border-box;
   }
 .nav-item a {
     text-decoration: none;
@@ -27,6 +28,7 @@ html, body {
     font-size: 80%;
     margin-right: 40px;
     background-color:#fff;
+    box-sizing:border-box;
 }
 #home:hover {
     background-color: #477886;
@@ -82,10 +84,17 @@ img {
     max-width: 100%;
     height: auto;
 }
-img .img-standard {
+.img-standard {
   max-width: 100%;
   height:auto;
+  transition: ease-in-out 1s;
 }
+.img-standard:hover {
+  max-width: 100%;
+  height:auto;
+  transform: rotate(360deg) scale(.3);
+}
+
 /* Table Style */
 table th {
     text-align: left;
@@ -161,3 +170,23 @@ table.shopping-list tr :nth-child(3) {
   height: auto;
 }
 /*end star animation*/
+/*contact image*/
+.contact-image {
+  border-radius: 35px;
+  transform: scale(2) 1s;
+}
+/* background image */
+body {
+  background: #c2bbb1 url(../images/background.jpg) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 0px 0;
+}
+header {
+  background: #c2bbb1 url(../images/banner.jpg) center top no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-sizing: border-box;
+}
