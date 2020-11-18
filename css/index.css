@@ -62,7 +62,7 @@ html, body {
     border-radius: 0px 35px;
 }
 .image-banner:hover img {
-    transform: scale(1.5)
+    transform: scale(1.5);
 }
 .banner-description {
     position: absolute;
@@ -93,6 +93,20 @@ img {
   max-width: 100%;
   height:auto;
   transform: rotate(360deg) scale(.3);
+}
+.contact-banner {
+  position: relative;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.contact-banner img {
+  display: block;
+  transition-property: all;
+  transition-duration: 1.7s;
+  border-radius: 35px;
+}
+.contact-banner:hover img {
+  transform: scale(2);
 }
 
 /* Table Style */
